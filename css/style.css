@@ -72,21 +72,20 @@ a {
 }
 
 .header {
-  height: 77vh;
+  height: 70vh;
   width: 100%;
   display: block;
-  background-image: url("../images/donation0.jpg");
+  background-image: linear-gradient(360deg, #121212 0%, rgba(18, 18, 18, 0) 100%), url("../images/donation0.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  border-bottom: 2px solid green;
 }
 
 .head-content {
   height: auto;
   width: 60%;
   display: block;
-  padding: 4rem;
-  margin: 10rem 10%;
+  padding: 10rem;
   line-height: 1.5;
 }
 
