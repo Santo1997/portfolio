@@ -1,0 +1,93 @@
+.header {
+  @include area(77vh, 100%);
+  background-image: url("../images/hardy.png"), url("../images/header_bg.png"),
+    url("../images/developer.png");
+  background-repeat: no-repeat;
+  background-position: bottom right, bottom right, center left;
+  background-size: auto, auto, 8rem 90%;
+}
+
+.navbar {
+  padding: $mid-pm $mid-pm $mid-pm 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    font-size: $lg-font;
+    span {
+      color: var(--red);
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      position: relative;
+      li {
+        @include area(4rem, auto);
+        padding: $defult-pm;
+        margin-left: $defult-pm;
+        text-align: center;
+
+        &:last-child {
+          @include btn_formate(auto, auto, var(--orange), var(--white));
+
+          &:hover {
+            border-bottom: 0;
+          }
+          a {
+            color: var(--white);
+          }
+        }
+
+        &:hover {
+          border-bottom: 2px solid var(--danger);
+        }
+
+        a {
+          @include area(100%, auto);
+          color: var(--black);
+          font-size: $mid-font;
+        }
+      }
+    }
+  }
+}
+
+.head-content {
+  @include area(auto, 60%);
+  padding: $lg-pm;
+  margin: $ex-pm 10%;
+  line-height: 1.5;
+
+  h2 {
+    font-size: $lg-font;
+  }
+  h1 {
+    font-size: 6rem;
+    margin: $mid-pm 0;
+  }
+  p {
+    text-indent: $lg-pm;
+  }
+
+  .hed-btn {
+    @include area(auto, calc(55% - 5%), grid, 50% 45%);
+    align-items: center;
+    grid-column-gap: 5%;
+    margin-top: $lg-pm;
+    text-align: center;
+  }
+}
+
+.pri-btn {
+  @include btn_formate(auto, auto, var(--orange), var(--white));
+}
+
+.sec-btn {
+  @include btn_formate(auto, auto, var(--white), var(--orange));
+  border: 1px solid var(--orange);
+}
