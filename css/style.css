@@ -75,62 +75,10 @@ a {
   height: 77vh;
   width: 100%;
   display: block;
-  background-image: url("../images/hardy.png"), url("../images/header_bg.png"), url("../images/developer.png");
+  background-image: url("../images/donation0.jpg");
   background-repeat: no-repeat;
-  background-position: bottom right, bottom right, center left;
-  background-size: auto, auto, 8rem 90%;
-}
-
-.navbar {
-  padding: 2rem 2rem 2rem 15rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.navbar h1 {
-  font-size: 4rem;
-}
-.navbar h1 span {
-  color: var(--red);
-}
-.navbar nav ul {
-  display: flex;
-  list-style: none;
-  align-items: center;
-  position: relative;
-}
-.navbar nav ul li {
-  height: 4rem;
-  width: auto;
-  display: block;
-  padding: 0.8rem;
-  margin-left: 0.8rem;
-  text-align: center;
-}
-.navbar nav ul li:last-child {
-  height: auto;
-  width: auto;
-  display: block;
-  background: var(--orange);
-  border-radius: 0.8rem;
-  padding: 2rem;
-  color: var(--white);
-}
-.navbar nav ul li:last-child:hover {
-  border-bottom: 0;
-}
-.navbar nav ul li:last-child a {
-  color: var(--white);
-}
-.navbar nav ul li:hover {
-  border-bottom: 2px solid var(--danger);
-}
-.navbar nav ul li a {
-  height: 100%;
-  width: auto;
-  display: block;
-  color: var(--black);
-  font-size: 2rem;
+  background-position: center;
+  background-size: cover;
 }
 
 .head-content {
@@ -140,26 +88,6 @@ a {
   padding: 4rem;
   margin: 10rem 10%;
   line-height: 1.5;
-}
-.head-content h2 {
-  font-size: 4rem;
-}
-.head-content h1 {
-  font-size: 6rem;
-  margin: 2rem 0;
-}
-.head-content p {
-  text-indent: 4rem;
-}
-.head-content .hed-btn {
-  height: auto;
-  width: 50%;
-  display: grid;
-  grid-template-columns: 50% 45%;
-  align-items: center;
-  grid-column-gap: 5%;
-  margin-top: 4rem;
-  text-align: center;
 }
 
 .pri-btn {
